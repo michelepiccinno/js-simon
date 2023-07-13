@@ -1,5 +1,5 @@
 //dichiaro la variabile e inserisco la data e l'orario di countdown
-let countdown = new Date("07 13, 2023, 19:08:10").getTime();
+let countdown = new Date("07 14, 2023, 09:30:00").getTime();
 
 //aggiorno ogni secondo
 let clockTime = setInterval(function () {
@@ -17,7 +17,7 @@ console.log(clockcalc);
     let s = Math.floor((clockcalc % (1000 * 60)) / 1000);
 
     //inietto il contenuto delle 3 variabili nel html
-    document.getElementById("clock-timer").innerHTML = `TEMPO MANCANTE ALLA LEZIONE<br>GIORNI: ${d} <br>MINUTI: ${m} <br>ORE: ${h} <br>MINUTI: ${m} <br>SECONDI: ${s}`;
+    document.getElementById("clock-timer").innerHTML = `TEMPO MANCANTE ALLA LEZIONE<br>GIORNI: ${d}  <br>ORE: ${h} <br>MINUTI: ${m} <br>SECONDI: ${s}`;
 
     //imposto la condizione
     if (clockcalc < 0) {
